@@ -1,0 +1,3 @@
+Hello, this is Nitesh Kumar
+Now, i am learning coding
+Today i learn about seek(), tell(), & more other methods of python

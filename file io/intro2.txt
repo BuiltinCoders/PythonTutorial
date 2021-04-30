@@ -1,0 +1,3 @@
+I am getting len of data
+using 'r+' mode
+using 'r+' mode
