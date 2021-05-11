@@ -17,15 +17,15 @@ else:
     pl = []
 
     for j in l:
-        if j>10:
+        if j > 10:
             p = j+1
-            while p>j:
+            while p > j:
                 # checking whelter the p is palindrom or not
-                if str(p)==str(p)[::-1]:
+                if str(p) == str(p)[::-1]:
                     pl.append(p)
                     break
                 else:
-                    p+=1
+                    p += 1
         else:
             pl.append(j)
 
