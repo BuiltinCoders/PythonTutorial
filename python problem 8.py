@@ -1,11 +1,21 @@
 #                                    Rohan Das is a Fraud
+import random
+
+def rohanTable(number):
+    wrong = random.randint(0, 9)
+    table = [i*number for i in range(1, 11)]
+    table[wrong] = table[wrong]+wrong
+    return table
+
 
 def iscorrect(table, number):
     for value in range(0, len(table)+1):
         if table[value] != number*(value+1):
-            return f"Index value is {value+1}"
-
+            return f"This table is wrong at index value {value+1}"
     return None
 
+number = int(input("Enter the number: "))
 
-print(iscorrect([5, 10, 15, 20, 25, 40, 35, 40, 46, 50], 5))
+table = rohanTable(number)
+print(table)
+print(iscorrect(table, number))
