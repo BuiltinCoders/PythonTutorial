@@ -16,6 +16,7 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
+speak("mera naam hemant hai")
 
 def wishMe():
     time = int(datetime.datetime.now().hour)
